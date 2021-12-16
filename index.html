@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Clock with weather</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__top">
+                    <button class="btn__bg">
+                        Change Background
+                    </button>
+                    <div class="weather__card">
+                        <div><input class="search__input" type="text" placeholder="Search..."></div>
+                        <div class="city__name">Moscow</div>
+                        <div class="weather__icon">pic</div>
+                        <div class="temperature">-2°C</div>
+                        <div class="weather__description">snow</div>
+                        <div class="weather__windspeed">Wind Speed: 2.39</div>
+                    </div>
+                </div>
+                <div class="header__content">
+                    <div class="date__and-time">
+                        <div class="date">
+                            <p>Monday, 13 December</p>
+                        </div>
+                        <div class="time">
+                            <time id="time" class="time__number">
+                                18:15:05
+                            </time>
+                        </div>
+                    </div>
+                    <div class="name__and-focus">
+                        <div class="name__content">
+                            <h1>
+                                <span id="greeting" class="greeting">
+                                    Good Afternoon,
+                                </span>
+                                <span id="name" contenteditable="true">
+
+                                </span>
+                            </h1>
+                        </div>
+                        <div class="focus__content">
+                            <h2 class="focus__content-text">
+                                What Is Your Focus For Tuday?
+                            </h2>
+                            <h2 id="focus" contenteditable="true" class="focus__text">
+
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__footer">
+                    <div class="quote__text">
+                        You were not born a winner, and you were not born a loser. You are what you make
+                        yourself be.
+                    </div>
+                    <div class="quote__author">
+                        Lou Holtz
+                    </div>
+                    <div class="btn__quote-footer">
+                        <button class="btn__quote">
+                            Change quote
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>

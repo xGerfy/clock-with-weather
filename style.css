@@ -1,0 +1,145 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: .5s;
+}
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.header {
+    background-image: url(..//img/overlay.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn__bg {
+    border: none;
+    border-radius: 10px;
+    width: 120px;
+    padding: 20px;
+    color: white;
+    background-color:rgba(255, 255, 255, 0.5);
+    transition: .3s;
+}
+.btn__bg:hover {
+    background-color:rgba(255, 255, 255, 0.6);
+}
+.btn__bg:active {
+    background-color:rgba(255, 255, 255, 0.2);
+}
+.weather__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+input {
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 5px 0;
+    margin-bottom: 5px;
+}
+.city__name {
+    font-weight: bold;
+}
+.weather__icon,
+.img__src {
+    display: flex;
+    height: 70px;
+    width: 70px;
+    align-items: center;
+}
+.date__and-time {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight: bold;
+    user-select: none;
+}
+.date {
+    font-size: 3rem;
+    margin-bottom: 35px;
+}
+.time__number {
+    font-size: 8rem;
+}
+.name__and-focus {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 35px;
+}
+.greeting,
+.focus__content-text {
+    user-select: none;
+}
+.focus__content {
+    margin: 35px auto 0 auto;
+    opacity: .8;
+}
+.focus__text {
+    margin-top: 10px;
+}
+.header__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.quote__text,
+.quote__author {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 10px;
+}
+.btn__quote {
+    border: none;
+    border-radius: 10px;
+    width: 120px;
+    padding: 20px;
+    color: white;
+    background-color:rgba(255, 255, 255, 0.4);
+    transition: .3s;
+}
+.btn__quote:hover {
+    background-color:rgba(255, 255, 255, 0.5);
+}
+.btn__quote:active {
+    background-color:rgba(255, 255, 255, 0.2);
+}
+@media(max-width: 700px) {
+    .time__number {
+        font-size: 5.5rem;
+    }
+    .date {
+        font-size: 1.5rem;
+    }
+}
