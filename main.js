@@ -210,7 +210,6 @@ function getQuote() {
     fetch(`https://favqs.com/api/qotd`)
     .then(function (respQuote) { return respQuote.json() })
     .then(function (dataQuote) {
-        console.log(dataQuote);
         document.querySelector('.quote__text').textContent = dataQuote.quote.body;
         document.querySelector('.quote__author').textContent = dataQuote.quote.author;
         
